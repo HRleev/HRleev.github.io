@@ -8,6 +8,26 @@
 </head>
 <body>
     <h2>회원가입 페이지</h2>
-   
+   아이디:<input type ="text" id="id">
+   비밀번호: <input type ="text" id="password" >
+   비밀번호확인: <input type ="text" id="passwordCheck"  >
+   이메일<input type ="text" id ="email">@
+            <input type="text" id ="address">
+            <select id ="domain" onchange="selectaddress()">
+            <option>선택</option>
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="gmail.com">gmail.com</option>
+            
+            </select>
 </body>
+<script>
+    function selectddress(){
+        const domain= document.getElementById("domain");
+        const domainlValue=document.getElementById("domain").value;
+        const address =document.getElementById("passwordCheck");
+        address.value =domainValue;
+    }
+</script>
 </html>
